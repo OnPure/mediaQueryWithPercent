@@ -1,5 +1,9 @@
-## 本项目是淘宝弹性布局方案lib-flexible在react框架中的实践，因为本人使用react较多，并且搜索网上虽然有教学flexible如何使用，但是并没有一个完整地运用项目，所以准备自己做一个，加深对手机适配方案的探究
-> 项目模仿**苏宁易购**的移动端页面，它本身是基于media query的，所以没有copy，原创！！！
+### 本项目是最常用的媒体查询方案在react框架中的实践，因为本人使用react较多。媒体查询方案因为其搭建方便，并且可实用性强，所以得到了非常普遍的应用，此项目仅作为模板和他人学习使用。
+
+> 项目模仿**苏宁易购**的移动端页面，它本身就是基于media query的。
+
+> 在此项目中使用*flex布局*，*media query*定义font-size，细节采用*百分比*的形式来实现各分辨率的兼容。
+
 
 ## 项目结构
 > 本项目是基于create-react-app框架自己一步步搭建出来的，踩了很多坑，最多的就是版本不一致导致的编译错误，还找不到原因，mmp......
@@ -44,29 +48,6 @@
 
 
 >> dev指令————package.json文件中webpack-dev-server --inline --progress --hot --config build/webpack.dev.conf.js<br/><br/><br/>
-
-* lib-flexible
-
-> 在index.js入口文件头部引入————import 'lib-flexible'<br/>
-
-> 基本所有样式都按照750px设计图写，使用px2rem插件转成rem<br/>
-
-> 字体单独定义<br/>
-
-```
-.font-dpr(@font-size){
-    font-size: @font-size;
-
-    [data-dpr="2"] & {
-        font-size: @font-size * 2;
-    }
-
-    [data-dpr="3"] & {
-        font-size: @font-size * 3;
-    }
-}
-```<br/><br/><br/>
-
 
 
 * swiper@4.4.6————最新版本<br/><br/><br/>
