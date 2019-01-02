@@ -1,0 +1,360 @@
+:global {
+  .iconfont{
+    font-family:"iconfont" !important;
+    font-size: 24px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+  .App{
+    width: 100%;
+    height: 100%;
+    background: #d81140;
+    .conCont{
+      width: 100%;
+      height: 100%;
+      .navbar{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        // justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        z-index: 99;
+        .navbarType{
+          display: block;
+          margin: 6px 10px;
+          color: #fff;
+        }
+        .navbarSearch{
+          flex:1 !important;
+          position: relative;
+          height: 40px;
+          // display: flex;
+          // align-items: center;
+          form{
+            height: 40px;
+            input{
+              display: block;
+              width: 95%;
+              padding-left: 10px;
+              border: 0;
+              -webkit-border-radius: .67rem;
+              height: 28px;
+              margin-top: 6px;
+              margin-left: auto;
+              margin-right: auto;
+              line-height: 28px;
+              background: rgba(255, 255, 255, 0.8);
+              color: #999;
+              -webkit-appearance: none;
+              font-size: 14px;
+            }
+          }
+        }
+        .btnLogin{
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          line-height: 40px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+      :global {
+        .swiperBox{
+          position: relative;
+          margin-top: -40px;
+          width: 100%;
+          height: 175px;
+          .swiper-slide{
+            width: 100%;
+            height: 100%;
+            .pic{
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              img{
+                width: 100%;
+                height: 100%
+                // transition:all 0.4s;
+                // &:hover{
+                //   transform: scale(1.1);
+                // }
+              }
+            }
+          }
+          .egPagin{
+              position: absolute;
+              right: 15px;
+              bottom: 15px;
+              z-index: 10;
+              display: flex;
+              justify-content: center;
+              .swiper-pagination-bullet{
+                  float:left;
+                  font-size: 0;
+                  margin-right: 5px;
+                  width: 5px;
+                  height: 5px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  background-color: #fff;
+                  cursor: pointer;
+              }
+              .swiper-pagination-bullet-active{
+                  width: 10px;
+                  border-radius: 5px;
+                  background-color: #fff;
+              }
+          }
+        }
+      }
+      .enterList{
+        background: #fff;
+        padding-top: .27rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          position: relative;
+          width: 20%;
+          height: 60px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          a{
+            width: 100%;
+            height: 100%;
+            img{
+              margin-left: 14.5px;
+              width: 35px;
+              height: 35px;
+            }
+            :global{
+              .sTitle{
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: #333;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .totiao{
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        margin-top: -1px;
+        .logo{
+          width: 30px;
+          height: 30px;
+          padding: 0 15px;
+        }
+        :global {
+          .swiperBox1{
+            width: 100%;
+            height: 48px;
+            .swiper-slide{
+              width: 100%;
+              height: 24px;
+              li{
+                height: 100%;
+                line-height: 24px;
+                display: flex;
+                cursor: pointer;
+                overflow: hidden;
+                &:hover{
+                  .text{
+                    color: #ff7d00;
+                  }
+                }
+                a{
+                  .tag{
+                    border:1px solid #f60;
+                    border-radius: .11rem;
+                    padding: 0 4px;
+                    margin-right: 6px;
+                    color: #f60;
+                  }
+                  .text{
+                    width: 196px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    text-overflow: ellipsis;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .beyondYear{
+        width: 100%;
+        .logo{
+          width: 100%;
+          height: 90px;
+          a{
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .viewList{
+          position: relative;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 10px;
+          width: 95%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          li{
+              width: 50%;
+              height: 70px;
+              // margin-right: 10px;
+              a{
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+          }
+        }
+      }
+      .saleList{
+        width: 100%;
+        display: flex;
+        li{
+          position: relative;
+          width: 25%;
+          height: 128px;
+          background-size: 100% 100%;
+          text-align: center;
+          a{
+            img.bc{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+            img.product{
+              position: relative;
+              width: 60px;
+              height: 60px;
+              margin: 10px auto 20px;
+            }
+            .sTitle,.subTitle{
+              position: relative;
+              width: 100%;
+              height: 48px;
+              line-height: 24px;
+              font-size: 14px;
+              color: #ac0303;
+              text-align: center;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+      // 猜你喜欢 begin
+      .view3{
+        .titbar{
+          position: relative;
+          width: 100%;
+          height: 35px;
+          a{
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .cont{
+          width: 100%;
+          display: flex;
+          flex-flow: wrap;
+          background: #fff;
+          li{
+            width: 49.5%;
+            height: 230px;
+            border-bottom: 2px solid #f2f2f2;
+            text-align: center;
+            padding-bottom: 10px;
+            &:nth-child(odd){
+              border-right: 2px solid #f2f2f2;
+            }
+            a{
+              img{
+                position: relative;
+                width: 136.5px;
+                height: 136.5px;
+                margin-top: 10px;
+              }
+              .sTitle{
+                position: relative;
+                height: 40px;
+                line-height: 20px;
+                text-shadow: collapse;
+                text-align: left;
+                overflow: hidden;
+                vertical-align: middle;
+                margin: auto 15px;
+                font-size: 12px;
+                i{
+                    display: inline-block;
+                    width: 30px;
+                    height: 14px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+              }
+              .info{
+                position: relative;
+                width:100%;
+                height: 20px;
+                line-height: 20px;
+                display: flex;
+                margin-left: 15px;
+                span{
+                  background: #f60;
+                  font-size: 12px;
+                  border-radius: 10px;
+                  color: #fff;
+                  padding: 0 4px;
+                  margin-right: 5px;
+                }
+              }
+              .price{
+                position: relative;
+                width: 100%;
+                height: 24px;
+                line-height: 24px;
+                font-size: 16px;
+                color: #f40;
+                text-align: left;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+      // 猜你喜欢 end
+    }
+  }
+// }
